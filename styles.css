@@ -21,7 +21,8 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  color: #fff;
+  color: #f7f7f7;
+  padding: 0;
 
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@ body {
 
 #hero .hero-text {
   text-align: center;
-  margin-top: -160px;
+  margin-top: -250px;
   padding: 20px 0;
   border-top: 2px solid #c7c7c7;
   border-bottom: 2px solid #c7c7c7;
@@ -45,6 +46,13 @@ body {
   margin-right: 10px;
   padding-right: 15px;
   border-right: 2px solid #a7a7a7;
+}
+
+#hero .ion-chevron-down {
+  position: absolute;
+  bottom: 0;
+  font-size: 2.5em;
+  color: #f7f7f7;
 }
 
 h1, h2, h3, h4 {
@@ -64,6 +72,11 @@ h1 {
 h3 {
   font-size: 16px;
   margin: 10px 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 1em;
 }
 
 /* Screen sizes
