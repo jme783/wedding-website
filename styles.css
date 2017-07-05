@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Arsenal', sans-serif;
+}
+.flexbox {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+#hero {
+  width: 100%;
+  height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/jeff-eliza-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  color: #fff;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .hero-text {
+  text-align: center;
+  margin-top: -160px;
+  padding: 20px 0;
+  border-top: 2px solid #c7c7c7;
+  border-bottom: 2px solid #c7c7c7;
+}
+
+#hero h3 {
+  color: #c7c7c7;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#hero h3:first-of-type {
+  margin-right: 10px;
+  padding-right: 15px;
+  border-right: 2px solid #a7a7a7;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Screen sizes
+ Small size: 480px
+ Medium size: 768px
+ Large size: 992px
+ Xtra Large size: 1200px
+*/
+
+/* Small up */
+@media (min-width: 480px) {
+}
+
+/* Medium up */
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  h1 {
+    font-size: 48px;
+  }
+}
+
+/* Large up */
+@media (min-width: 992px) {
+}
+
+/* XLarge up */
+@media (min-width: 1200px) {
+}
