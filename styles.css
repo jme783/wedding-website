@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Proxima Nova', Georgia, sans-serif;
+  color: #333333;
 }
 .flexbox {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -57,10 +58,6 @@ img.ampersand {
 footer {
   width: 100%;
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.05)
-    ),
     url(images/jeff-eliza-footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,7 +67,7 @@ footer {
   color: #FDF6E9;
   justify-content: center;
   border-top: 1px solid #c7c7c7;
-  padding-top: 50px;
+  padding-top: 160px;
 }
 
 footer p {
@@ -78,7 +75,6 @@ footer p {
   font-size: 32px;
   line-height: 45px;
   text-align: center;
-  color: #FDF6E9;
 }
 
 
@@ -133,8 +129,8 @@ h4 {
 
 p {
   margin-top: 0;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: 26px;
   color: #333;
 }
 
@@ -162,12 +158,10 @@ section {
 
 .section-title {
   color: #628976;
-  font-size: 32px;
+  font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid #91B09E;
-  border-bottom: 2px solid #91B09E;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -196,7 +190,6 @@ section {
 .address-and-directions {
   justify-content: space-between;
   align-items: center;
-  width: 90%;
   margin: 0 auto 30px;
 }
 
@@ -256,7 +249,7 @@ section {
   padding: 5px 15px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   border-radius: 2px;
   display: inline-block;
   font-family: 'proxima_nova_altbold', Georgia, sans-serif;
@@ -336,12 +329,12 @@ p.starred-info {
 
 .hotel-list li p.address {
   margin-bottom: 0;
+  margin-top: 10px;
 }
 .hotel-list li .hotel-info {
   text-align: center;
 }
 .hotel-list li .hotel-info h4 {
-  margin-bottom: 5px;
   position: relative;
   display: inline;
 }
@@ -394,6 +387,9 @@ p.starred-info {
 
 /* Medium up */
 @media (min-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
   .embedded-map {
     display: block;
   }
