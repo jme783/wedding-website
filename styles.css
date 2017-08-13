@@ -307,14 +307,26 @@ span.teasin {
 }
 
 .embedded-map {
-  height: 560px;
+  height: 400px;
   overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.embedded-map .overlay {
+  background: transparent;
+  position:relative;
+  width: 100%;
+  height: 400px;
+  top: 400px;
+  margin-top: -400px;
+  z-index: 1;
 }
 
 .embedded-map iframe {
   position: relative;
   border: 0;
   top: -80px;
+  z-index: 0;
 }
 
 /* Screen sizes
