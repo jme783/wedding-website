@@ -149,10 +149,8 @@ h3 {
 }
 
 section {
-  min-height: 200px;
-  padding: 1em;
+  padding: 0 1em;
   max-width: 1024px;
-  margin: 40px auto;
 }
 
 
@@ -161,8 +159,9 @@ section {
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .venue {
@@ -213,6 +212,9 @@ section {
   margin-bottom: 20px;
 }
 
+.wedding-details li p {
+  margin-bottom: 0;
+}
 
 .venue-img img {
   width: 70%;
@@ -387,8 +389,13 @@ p.starred-info {
 
 /* Medium up */
 @media (min-width: 768px) {
+  section {
+    margin: 40px auto;
+  }
   .section-title {
     font-size: 36px;
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
   .embedded-map {
     display: block;
@@ -400,7 +407,7 @@ p.starred-info {
     text-align: left;
   }
   .wedding-details {
-    margin: 60px auto 20px;
+    margin: 60px auto 0;
   }
   .wedding-details li {
     width: 32%;
