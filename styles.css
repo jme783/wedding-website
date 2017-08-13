@@ -310,6 +310,7 @@ span.teasin {
   height: 400px;
   overflow: hidden;
   margin-bottom: 40px;
+  display: none;
 }
 
 .embedded-map .overlay {
@@ -349,6 +350,9 @@ span.teasin {
 
 /* Medium up */
 @media (min-width: 768px) {
+  .embedded-map {
+    display: block;
+  }
   .address-and-directions .left {
     margin-bottom: 0;
   }
