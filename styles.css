@@ -94,8 +94,6 @@ img.ampersand {
   text-align: center;
   margin-top: -250px;
   padding: 20px 0;
-  border-top: 2px solid #c7c7c7;
-  border-bottom: 2px solid #c7c7c7;
 }
 
 #hero h3 {
@@ -108,9 +106,10 @@ img.ampersand {
 }
 
 #hero h3:first-of-type {
-  margin-right: 10px;
-  padding-right: 15px;
   border-right: 2px solid #a7a7a7;
+  margin-right: 5px;
+  padding-right: 8px;
+  letter-spacing: 1px;
 }
 
 #hero .ion-chevron-down {
@@ -503,6 +502,10 @@ p.map-helper span {
 
 /* Medium up */
 @media (min-width: 768px) {
+  #hero h3:first-of-type {
+    margin-right: 10px;
+    padding-right: 15px;
+  }
   #hero {
     height: 100vh;
   }
