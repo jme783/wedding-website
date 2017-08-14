@@ -509,7 +509,7 @@ p.map-helper span {
   #nav li a {
     text-transform: uppercase;
     font-family: 'proxima_nova_altbold', Georgia, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 16px;
   }
   img.ampersand {
