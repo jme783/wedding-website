@@ -145,7 +145,7 @@
     </section>
     <div class="embedded-map">
       <p class="map-helper">
-        <span>Press and hold on the <strong>lock icon</strong> to explore the map of Boston hotels</span>
+        <span>Press and hold on the <strong>lock icon</strong> to explore the map. You never know what you might find...</span>
       </p>
       <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1PXTO03INaSwb_WDJSPCVse4VZFg" width="100%" height="480" frameborder="0"></iframe>
     </div>
@@ -179,7 +179,7 @@
       $(googleMapSelector).scrollprevent({
         pressDuration: 500,
         onMapLock: function() {
-          $('p.map-helper span').html('Press and hold on the <strong>lock icon</strong> to explore the map of Boston hotels');
+          $('p.map-helper span').html('Press and hold on the <strong>lock icon</strong> to explore the map.  You never know what you might find...');
         },
         onMapUnlock: function() {
           $('p.map-helper span').html('Have fun exploring! When you\'re done, click the <strong>lock icon</strong> again to exit');

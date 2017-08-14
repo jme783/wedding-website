@@ -358,14 +358,14 @@ p.starred-info {
   margin-bottom: 40px;
   display: none;
   padding-top: 50px;
-  height: 350px;
+  height: 420px;
 }
 p.map-helper {
   width: 100%;
   display: block;
   z-index: 1;
   position: relative;
-  top: -50px;
+  top: -16px;
   margin-bottom: 0;
   color: #333;
   text-align: center;
@@ -385,12 +385,12 @@ p.map-helper span {
 .embedded-map .mapscroll-wrap iframe {
   position: relative;
   border: 0;
-  top: -80px;
+  top: -46px;
   z-index: 0;
   border-bottom: 1px solid #c7c7c7;
 }
 .embedded-map .mapscroll-button {
-  bottom: 100px;
+  bottom: 60px;
 }
 .mapscroll-wrap {
   width: 100% !important;
