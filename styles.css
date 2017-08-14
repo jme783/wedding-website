@@ -19,7 +19,7 @@ a {
   transition: all 0.2s;
 }
 
-a:hover {
+.no-touch a:hover {
   color: #C02C22;
 }
 
@@ -269,7 +269,7 @@ section {
   font-family: 'proxima_nova_altbold', Georgia, sans-serif;
 }
 
-.btn:hover {
+.no-touch .btn:hover {
   background: #C02C22;
 }
 p.centered {
@@ -287,7 +287,7 @@ p.centered {
   background: #c7c7c7;
 }
 
-.btn:hover {
+.no-touch .btn:hover {
   color: #FDF6E9;
 }
 
@@ -455,7 +455,7 @@ p.map-helper span {
   color: #333;
   cursor: default;
 }
-#nav li.current a:hover {
+.no-touch #nav li.current a:hover {
   color: #FDF6E9;
 }
 #nav.below-shelf li.current a {
@@ -464,7 +464,7 @@ p.map-helper span {
 #nav.below-shelf li a {
   color: #a7a7a7;
 }
-#nav.below-shelf li a:hover {
+.no-touch #nav.below-shelf li a:hover {
   color: #333333;
 }
 
@@ -479,7 +479,7 @@ p.map-helper span {
 }
 
 
-#nav li a:hover {
+.no-touch #nav li a:hover {
   color: #c7c7c7;
 }
 
