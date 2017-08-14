@@ -3,6 +3,9 @@ body {
   font-family: 'Proxima Nova', Georgia, sans-serif;
   color: #333333;
 }
+strong {
+  font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+}
 .flexbox {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -18,6 +21,10 @@ a {
 
 a:hover {
   color: #C02C22;
+}
+
+.section-title {
+  font-size: 28px;
 }
 
 #hero h1 span, #hero h1 img.ampersand {
@@ -55,27 +62,35 @@ img.ampersand {
   align-items: center;
 }
 
-footer {
-  width: 100%;
-  background:
-    url(images/jeff-eliza-footer.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 400px;
-  margin-top: 40px;
-  color: #FDF6E9;
-  justify-content: center;
-  border-top: 1px solid #c7c7c7;
-  padding-top: 160px;
+#contact-us {
+  padding-bottom: 40px;
 }
 
-footer p {
-  font-style: italic;
-  font-size: 32px;
-  line-height: 45px;
-  text-align: center;
+#contact-us div {
+  align-items: center;
 }
+
+#contact-us img {
+  display: block;
+  border-radius: 4px;
+  max-width: 90%;
+  margin-bottom: 40px;
+  max-height: 400px;
+}
+
+#contact-us .right {
+  text-align: center;
+  flex: 1;
+}
+#contact-us h4 {
+  font-size: 18px;
+}
+#contact-us p {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
 
 
 #hero .hero-text {
@@ -170,7 +185,7 @@ section {
 
 .venue-img {
   border-radius: 4px;
-  height: 350px;
+  height: 285px;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.2),
@@ -291,7 +306,7 @@ span.teasin {
   margin-right: 7px;
 }
 
-.hotel-list .ion-star {
+.hotel-list .hotel-info .ion-star {
   margin-right: 0;
   position: absolute;
   right: -22px;
@@ -300,8 +315,8 @@ span.teasin {
 
 p.starred-info {
   text-align: center;
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin: 0 0 20px;
+  width: 100%;
 }
 
 .hotel-list {
@@ -346,27 +361,60 @@ p.starred-info {
 }
 
 .embedded-map {
-  height: 400px;
-  overflow: hidden;
   margin-bottom: 40px;
   display: none;
+  padding-top: 50px;
+  height: 350px;
 }
-
-.embedded-map .overlay {
-  background: transparent;
-  position:relative;
+p.map-helper {
   width: 100%;
-  height: 400px;
-  top: 400px;
-  margin-top: -400px;
+  display: block;
   z-index: 1;
+  position: relative;
+  top: -50px;
+  margin-bottom: 0;
+  color: #333;
+  text-align: center;
+  border-top: 1px solid #c7c7c7;
+  line-height: 30px;
+}
+p.map-helper strong {
+  color: #F35F55;
+}
+p.map-helper span {
+  background: rgba(255,255,255,0.8);
+  padding: 5px 15px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
-.embedded-map iframe {
+.embedded-map .mapscroll-wrap iframe {
   position: relative;
   border: 0;
   top: -80px;
   z-index: 0;
+  border-bottom: 1px solid #c7c7c7;
+}
+.embedded-map .mapscroll-button {
+  bottom: 100px;
+}
+.mapscroll-wrap {
+  width: 100% !important;
+  height: 400px;
+  overflow: hidden;
+}
+
+.embedded-map .mapscroll-overlay {
+  cursor: default;
+  width: 100% !important;
+}
+
+.embedded-map .mapscroll-progress {
+  background: rgba(243,95,85, 0.2);
+}
+
+.embedded-map .mapscroll-icon {
+  fill: #F35F55;
 }
 
 /* Screen sizes
@@ -389,6 +437,18 @@ p.starred-info {
 
 /* Medium up */
 @media (min-width: 768px) {
+  #contact-us h4 {
+    font-size: 22px;
+  }
+  #contact-us img {
+    margin-right: 75px;
+    height: 500px;
+    max-height: 500px;
+    margin-bottom: 0;
+  }
+  #contact-us h4:first-of-type {
+    margin-top: 0;
+  }
   section {
     margin: 40px auto;
   }
