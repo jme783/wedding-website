@@ -414,6 +414,75 @@ p.map-helper span {
   fill: #F35F55;
 }
 
+#nav {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 15px 0;
+  z-index: 999;
+  transition: background 0.5s;
+}
+
+#nav.below-shelf {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  background: rgba(255,255,255,0.9);
+}
+
+#nav.below-shelf li a {
+  color: #333333;
+}
+
+#nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#nav li:last-of-type {
+  margin-right: 0;
+}
+
+#nav li.current a {
+  border-bottom: 2px solid #628976;
+  color: #333;
+  cursor: default;
+}
+#nav li.current a:hover {
+  color: #FDF6E9;
+}
+#nav.below-shelf li.current a {
+  color: #333333;
+}
+#nav.below-shelf li a {
+  color: #a7a7a7;
+}
+#nav.below-shelf li a:hover {
+  color: #333333;
+}
+
+#nav li a {
+  color: #FDF6E9;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.5s;
+  font-size: 14px;
+  font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+}
+
+
+#nav li a:hover {
+  color: #c7c7c7;
+}
+
 /* Screen sizes
  Small size: 480px
  Medium size: 768px
@@ -434,6 +503,15 @@ p.map-helper span {
 
 /* Medium up */
 @media (min-width: 768px) {
+  #nav li {
+    margin-right: 20px;
+  }
+  #nav li a {
+    text-transform: uppercase;
+    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
   img.ampersand {
     width: 55px;
   }
