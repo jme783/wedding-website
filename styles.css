@@ -80,7 +80,6 @@ img.ampersand {
 
 #contact-us .right {
   text-align: center;
-  flex: 1;
 }
 #contact-us h4 {
   font-size: 18px;
@@ -437,11 +436,13 @@ p.map-helper span {
 
 /* Medium up */
 @media (min-width: 768px) {
+  #contact-us .flexbox {
+    justify-content: space-around;
+  }
   #contact-us h4 {
     font-size: 22px;
   }
   #contact-us img {
-    margin-right: 75px;
     height: 500px;
     max-height: 500px;
     margin-bottom: 0;
