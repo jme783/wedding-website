@@ -37,7 +37,7 @@ a:hover {
 }
 
 img.ampersand {
-  width: 55px;
+  width: 40px;
 }
 
 #hero {
@@ -89,8 +89,6 @@ img.ampersand {
   line-height: 32px;
   margin-bottom: 0;
 }
-
-
 
 #hero .hero-text {
   text-align: center;
@@ -436,6 +434,9 @@ p.map-helper span {
 
 /* Medium up */
 @media (min-width: 768px) {
+  img.ampersand {
+    width: 55px;
+  }
   #contact-us .flexbox {
     justify-content: space-around;
   }
