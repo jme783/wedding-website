@@ -116,6 +116,9 @@ img.ampersand {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin: 10px 0;
 }
 
 #hero h3:first-of-type {
@@ -143,6 +146,15 @@ h1, h2, h3, h4 {
   margin-top: 0;
 }
 
+h3 {
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a7a7a7;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
 h4 {
   font-size: 16px;
   text-transform: uppercase;
@@ -164,11 +176,6 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 32px;
-}
-
-h3 {
-  font-size: 16px;
-  margin: 10px 0;
 }
 
 section {
@@ -193,7 +200,7 @@ section {
 
 .venue-img {
   border-radius: 4px;
-  height: 285px;
+  height: 305px;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.2),
@@ -512,6 +519,55 @@ p.map-helper span {
   color: #c7c7c7;
 }
 
+ul.events {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+ul.events li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #f7f7f7;
+  border: 1px solid #c7c7c7;
+  padding: 20px;
+}
+ul.events .event-address {
+  margin: 30px 0;
+}
+ul.events .date-and-time {
+  margin-bottom: 10px;
+  display: block;
+}
+ul.events .event-address span.address-details {
+  display: block;
+  line-height: 22px;
+}
+ul.events li h4 {
+  margin-bottom: 5px;
+}
+ul.events li img {
+  width: 80px;
+  margin: 0 auto 20px;
+}
+ul.events li:first-of-type {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+ul.events li .event-description {
+  font-style: italic;
+  color: #777;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
 /* Screen sizes
  Small size: 480px
  Medium size: 768px
@@ -532,6 +588,16 @@ p.map-helper span {
 
 /* Medium up */
 @media (min-width: 768px) {
+  ul.events {
+    flex-direction: row;
+  }
+  ul.events li {
+    flex: 1;
+  }
+  ul.events li:first-of-type {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
   .hero-ctas {
     display: flex;
     flex-direction: row;
@@ -595,7 +661,7 @@ p.map-helper span {
     text-align: left;
   }
   .wedding-details {
-    margin: 60px auto 0;
+    margin: 60px auto;
   }
   .wedding-details li {
     width: 32%;
@@ -618,7 +684,7 @@ p.map-helper span {
   }
   h3 {
     font-size: 22px;
-    margin: 15px 0;
+    margin: 50px 0;
   }
   h1 {
     font-size: 48px;
