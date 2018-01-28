@@ -27,6 +27,20 @@ a {
   font-size: 28px;
 }
 
+.hero-ctas {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-ctas .btn {
+  display: block;
+}
+
+.hero-ctas .btn:first-of-type {
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
 #hero h1 span, #hero h1 img.ampersand {
   display: inline-block;
   vertical-align: middle;
@@ -43,7 +57,7 @@ img.ampersand {
 #hero {
   width: 100%;
   max-width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh);
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.05),
@@ -60,6 +74,7 @@ img.ampersand {
 
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #contact-us {
@@ -252,21 +267,39 @@ section {
   text-align: center;
 }
 
+#hero .btn {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.40);
+}
+
 .btn {
   background: #F35F55;
   color: #FDF6E9;
   text-decoration: none;
-  padding: 5px 15px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 2px;
   display: inline-block;
   font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+  border: 2px solid #F35F55;
+}
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #FDF6E9;
+  color: #FDF6E9;
+  background: rgba(0,0,0,0.3);
+}
+.no-touch .btn.secondary:hover {
+  background: rgba(0,0,0,0.5);
+  border: 2px solid #FDF6E9;
 }
 
 .no-touch .btn:hover {
   background: #C02C22;
+  border: 2px solid #C02C22;
 }
 p.centered {
   text-align: center;
@@ -499,6 +532,18 @@ p.map-helper span {
 
 /* Medium up */
 @media (min-width: 768px) {
+  .hero-ctas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #hero .btn {
+    width: 150px;
+  }
+  #hero .btn {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
   #hero h3:first-of-type {
     margin-right: 10px;
     padding-right: 15px;
