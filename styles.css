@@ -696,6 +696,10 @@ ul.events li .event-description {
     letter-spacing: 4px;
   }
 }
+span.rsvp-by {
+  margin-top: 15px;
+  font-size: 18px;
+}
 
 /* Large up */
 @media (min-width: 992px) {
